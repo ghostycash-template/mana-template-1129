@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wallet-btn {
+  display: flex;
+  padding: 14px 52px 14px 47px;
+  align-items: center;
+  border-radius: 10px;
+  background: #242424;
+  box-shadow: 0px 12px 24px -6px rgba(45, 32, 17, 0.3),
+    0px 4px 8px 0px rgba(45, 32, 17, 0.2),
+    0px 1.5px 3px 0px rgba(45, 32, 17, 0.2),
+    0px 1px 1px 0px rgba(45, 32, 17, 0.12),
+    0px -3px 0px 0px rgba(0, 0, 0, 0.75) inset;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13.563px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  /* 147.465% */
+  transition: all 200ms;
+}
+
+.wallet-btn:hover {
+  color: #242424;
+  background: #fff;
+}
+
+.swap {
+  display: flex;
+  width: 209px;
+  padding: 14px 88px 14px 83px;
+  align-items: center;
+  max-width: 100%;
+  border-radius: 60px;
+  background: #ccc;
+  box-shadow: 0px 1px 1px 0px rgba(45, 32, 17, 0.12);
+  color: #202020;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+}
+
+.swap:hover {
+  color: #ccc;
+  background-color: #202020;
+}
+
+.withdraw-bg {
+  background: url("./assets/bg-design.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dashboard::-webkit-scrollbar {
+  stroke-width: 0px;
+}
+
+@media (width<720px) {
+  .wallet-btn {
+    padding: 9px 30px;
+    width: fit-content;
+  }
+}
+
+@media (width<540px) {
+  .sidebar {
+    width: fit-content;
+    /* overflow-x: auto; */
+    min-width: 441px;
+  }
+
+  .sidebar-outer {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
